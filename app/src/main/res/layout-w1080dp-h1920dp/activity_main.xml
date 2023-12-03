@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:src="@drawable/image_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+
+        <TextView
+            android:id="@+id/plus"
+            android:text="+"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_btn"
+            android:textSize="80sp" />
+        <TextView
+            android:id="@+id/minus"
+            android:text="-"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/minus_button"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/multiply"
+            android:text="x"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/multiply"
+            android:textSize="80sp" />
+        <TextView
+            android:id="@+id/divied"
+            android:text="/"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/divied_btn"
+            android:textSize="80sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/calculator_screen"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/initialNumber"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_field_border"
+            android:gravity="center"
+            android:text="0"
+            android:layout_marginEnd="10dp"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="+"
+            android:textSize="70sp" />
+
+        <EditText
+            android:id="@+id/secondNumber"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_field_border"
+            android:gravity="center"
+            android:text="0"
+            android:layout_marginStart="10dp"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="70sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/equals"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/equal_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/calculator_screen"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equals">
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Result"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
