@@ -1,4 +1,5 @@
 Kids Calculator - Fun and Educational Calculator App
+![logo](app/src/main/res/drawable/image_one.png) 
 Welcome to the Kids Calculator repository! This project is a delightful and easy-to-use calculator app designed specifically for kids. With its intuitive interface and engaging design, it makes learning basic arithmetic both fun and interactive. The app supports addition, subtraction, multiplication, and division, catering to the foundational mathematical needs of young learners.
 
 Key Features
